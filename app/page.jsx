@@ -2,27 +2,27 @@ import Image from "next/image";
 
 const menu = [
   {
-    name: "Espresso Signature",
-    desc: "Rasa bold, crema tebal, aftertaste cokelat.",
-    price: "Rp 28k",
+    name: "Avocado Float Coffee",
+    desc: "Perpaduan creamy alpukat segar dengan espresso hasil sangrai mandiri, lengkap dengan topping es krim vanila.",
+    price: "Rp 20k",
     tag: "Best Seller",
   },
   {
-    name: "Cappuccino Velvet",
-    desc: "Susu lembut, foam halus, aroma karamel.",
-    price: "Rp 35k",
+    name: "Syphon Coffee",
+    desc: "Diseduh dengan metode vakum untuk rasa yang bersih dan aroma kuat dari biji kopi fresh-roasted kami.",
+    price: "Rp 25k",
     tag: "Creamy",
   },
   {
-    name: "Cold Brew Nusantara",
-    desc: "Diseduh dingin 16 jam, smooth dan segar.",
-    price: "Rp 40k",
+    name: "Luwak Arabica Ponorogo",
+    desc: "Kopi Luwak pilihan khas Ponorogo dengan karakter rasa unik yang diproses dan disangrai dengan ketelitian tinggi.",
+    price: "Rp 25k",
     tag: "Fresh",
   },
   {
-    name: "V60 Single Origin",
-    desc: "Biji pilihan, profil rasa sesuai musim.",
-    price: "Rp 55k",
+    name: "V60",
+    desc: "Teknik manual brew yang menonjolkan karakter asli biji kopi pilihan musim ini. Fresh dari panggangan kami.",
+    price: "Rp 25k",
     tag: "Origin",
   },
 ];
@@ -61,7 +61,7 @@ export default function Home() {
       <header className="sticky top-0 z-40 border-b border-border bg-background/80 backdrop-blur dark:border-border dark:bg-black/80">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
           <div className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-lg border-2 border-primary bg-card">
+            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-lg bg-card">
               <Image
                 src="/images/images.png"
                 alt="Logo Reog Coffe"
@@ -160,7 +160,7 @@ export default function Home() {
 
               <div className="grid gap-6 sm:grid-cols-3 pt-8">
                 <div className="rounded-xl border-2 border-primary/20 bg-card p-6 dark:bg-black/50">
-                  <p className="text-4xl font-black text-primary dark:text-accent">16+</p>
+                  <p className="text-4xl font-black text-primary dark:text-accent">10+</p>
                   <p className="mt-2 text-sm font-bold text-muted-foreground">
                     Varian Biji Kopi
                   </p>
@@ -336,14 +336,14 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="rounded-xl border-2 border-primary/20 bg-card p-6 dark:bg-black/50 dark:border-accent/20">
                   <p className="text-xs font-bold text-muted-foreground dark:text-gray-400 mb-2">
-                    EMAIL
+                    Telephone
                   </p>
                   <p className="text-lg font-black text-foreground dark:text-white">
                     <a
                       className="text-primary hover:underline dark:text-accent"
                       href="mailto:hello@coffearoastery.com"
                     >
-                      hello@coffearoastery.com
+                      085784994195
                     </a>
                   </p>
                 </div>
@@ -352,7 +352,7 @@ export default function Home() {
                     JAM OPERASIONAL
                   </p>
                   <p className="text-lg font-black text-foreground dark:text-white">
-                    Senin - Jumat 09:00 - 20:00
+                    Setiap Hari 09:00 - 20:00
                   </p>
                 </div>
                 <div className="rounded-xl border-2 border-primary/20 bg-card p-6 dark:bg-black/50 dark:border-accent/20">
@@ -360,7 +360,7 @@ export default function Home() {
                     LOKASI
                   </p>
                   <p className="text-lg font-black text-foreground dark:text-white mb-2">
-                    Jl. Kopi No. 12, Kota Anda
+                  Jl. Menur, Sultanagung, Nologaten, Kec. Ponorogo, Kabupaten Ponorogo, Jawa Timur
                   </p>
                   <p className="text-sm text-muted-foreground dark:text-gray-300">
                     Bisa request lokasi meeting atau custom event. Kami siap membantu.
@@ -414,7 +414,7 @@ export default function Home() {
           <div className="grid gap-8 md:grid-cols-3">
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-lg border-2 border-primary bg-card">
+                <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-lg bg-card">
                   <Image
                     src="/images/images.png"
                     alt="Logo Reog Coffe"
@@ -452,11 +452,32 @@ export default function Home() {
 
             <div className="space-y-4">
               <p className="font-black text-lg">HUBUNGI KAMI</p>
-              <p className="text-sm font-bold text-foreground dark:text-white">
-                <a className="text-primary hover:underline dark:text-accent" href="mailto:hello@coffearoastery.com">
-                  hello@coffearoastery.com
-                </a>
-              </p>
+              <div className="space-y-3">
+                <p className="text-sm font-bold text-foreground dark:text-white">
+                  Instagram:{" "}
+                  <a
+                    className="text-primary hover:underline dark:text-accent"
+                    href="https://instagram.com/reogcoffe2"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    @reogcoffe2
+                  </a>
+                </p>
+                <p className="text-sm font-bold text-foreground dark:text-white">
+                  Telepon:{" "}
+                  <span className="text-muted-foreground dark:text-gray-300">
+                  085784994195
+                  </span>
+                </p>
+                <div className="text-sm font-bold text-foreground dark:text-white">
+                  <p>Alamat</p>
+                  <p className="mt-1 text-sm font-semibold text-muted-foreground dark:text-gray-300">
+                    4FMG+F4Q, Jl. Menur, Sultanagung, Nologaten, Kec. Ponorogo,
+                    Kabupaten Ponorogo, Jawa Timur 63419, Indonesia
+                  </p>
+                </div>
+              </div>
               <p className="text-xs font-bold text-muted-foreground dark:text-gray-400">
                 © {new Date().getFullYear()} Reog Coffe. All rights reserved.
               </p>
