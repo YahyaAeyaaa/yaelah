@@ -37,7 +37,7 @@ jobs:
 
       - name: Build static site
         env:
-          BASE_PATH: /yaelah
+          BASE_PATH: /${{ github.event.repository.name }}
           # Helps static export be deterministic in CI
           NODE_ENV: production
         run: npm run build
